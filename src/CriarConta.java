@@ -10,6 +10,13 @@ public class CriarConta {
         // Printando o valor de cada conta na tela
         System.out.println("A primeira conta tem " +primeiraConta.saldo);
         System.out.println("A segunda conta tem " +segundaConta.saldo);
+        // Criando condição pra ver se sao as mesmas contas
+        if (primeiraConta == segundaConta){
+            System.out.println("Sao a mesma conta");
+        }
+        else {
+            System.out.println("Sao contas diferentes");
+        }
 
 
     }
