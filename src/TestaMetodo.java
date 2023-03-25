@@ -1,10 +1,11 @@
 public class TestaMetodo {
     public static void main(String[] args) {
         Conta contaDoPaulo = new Conta();
-
-        contaDoPaulo.deposita(100);
+        // atribuindo valor com metodo deposita
+        contaDoPaulo.deposita(200);
         System.out.println(contaDoPaulo.saldo);
+        // sacando o valor com metodo saca
         contaDoPaulo.saca(50);
-        System.out.println(contaDoPaulo.saldo);
+
     }
 }

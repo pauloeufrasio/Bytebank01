@@ -9,8 +9,17 @@ public class Conta {
         this.saldo += valor;
     }
     // Criando o metodo saca que tambem recebe valor como parametro obs: A variavel (valor) é diferente da variavel do metodo deposita.
-    public void saca(double valor){
-        this.saldo -= valor;
+    public boolean saca(double valor){
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
+            System.out.println(" Voce retirou $" + valor + " e o valor atual é $" +this.saldo);
+            return true;
+        }
+        else {
+            System.out.println("Voce nao tem saldo suficiente pra completar essa transação seu saldo é "+ this.saldo);
+            return false;
+        }
+
     }
 
 }
