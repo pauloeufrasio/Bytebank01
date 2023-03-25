@@ -14,7 +14,7 @@ public class TesteReferecia {
         // O resultado vai ser o mesmo por que estamos se referindo a uma conta só que é a conta 1
         System.out.println("Saldo da conta 1 é "+ conta1.saldo);
         // criando condição pra ver se sao as mesmas contas
-        if (conta1 == segundaConta){ //
+        if (conta1 == segundaConta){
             System.out.println("Sao a mesma conta");
         }
 
