@@ -7,8 +7,8 @@ public class Conta {
     // Criando o metodo deposita que recebe (valor) como parametro e retorna saldo o que ta nele mesmo mais o (valor)
     public void deposita(double valor){
         this.saldo += valor;
-    // Criando o metodo saca que tambem recebe valor como parametro obs: A variavel (valor) é diferente da variavel do metodo deposita.
     }
+    // Criando o metodo saca que tambem recebe valor como parametro obs: A variavel (valor) é diferente da variavel do metodo deposita.
     public void saca(double valor){
         this.saldo -= valor;
     }
