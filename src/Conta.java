@@ -19,7 +19,18 @@ public class Conta {
             System.out.println("Voce nao tem saldo suficiente pra completar essa transação seu saldo é "+ this.saldo);
             return false;
         }
-
+    }
+    // Criando metodo transfere recebendo valor como parametro e conta destino
+    public boolean transfere (double valor, Conta destino){
+        if (this.saldo >= valor){
+            this.saldo -= valor;
+            // inserindo variavel (valor) dentro da conta destino
+            destino.deposita(valor);
+            System.out.println("Transferencia realizada com sucesso seu saldo é $" +this.saldo+ " e o valor transferido foi de $" +valor);
+            return true;
+        }
+        System.out.println("Voce nao tem saldo suficiente pra completar essa transação seu saldo é de " +this.saldo);
+        return false;
     }
 
 }
